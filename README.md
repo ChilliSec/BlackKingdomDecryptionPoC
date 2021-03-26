@@ -10,7 +10,7 @@ Code to crawl a disk and attempt the recovery of all files, as well as removing 
 * encrypted[123].txt.decrypted - Proof that the tool works when the data is encrypted using the failover key.
 
 By all means rewrite this code or wrap it in a directory walker to decrypt everything on an impacted server BUT consider that it will create new files (disk space?) and that it won't handle files that were corrupted by the original process or encrypted multiple times.
-Furthermore, exercise caution if attempting to automatically remove the `0x00` padding that may have been added to files or 'right' trimming filenamesto remove the random 4-7 character file extension added by this ransomware!
+Furthermore, exercise caution if attempting to automatically remove the `0x00` padding that may have been added to files or 'right' trimming filenames to remove the random 4-7 character file extension added by this ransomware!
 
 Be on the look out for our report that features this script, it should be dropping any time soon on the blog!
 
